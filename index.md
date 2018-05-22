@@ -1,6 +1,5 @@
 ---
 #
-# Here are some of my contributions.
 #
 title: Home
 layout: home
