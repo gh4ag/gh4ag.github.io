@@ -7,8 +7,7 @@ layout: home
 
 
 ### Python 
-
-- [Find best overlap between two curves]({{ site.baseurl }}{% link assets/python/curve_overlap/curve_overlap.ipynb %})
+- [Find best overlap between two curves]({{ site.baseurl }}{% link assets/python/curve_overlap/curve_overlap.html %}) <span style="opacity:0">HHHH</span> [[Download jupyter notebook]({{ site.baseurl }}{% link assets/python/curve_overlap/curve_overlap.ipynb %})]
 
 ### [FreeFem++ class examples](https://gh4ag.github.io/freefem_class_examples/)
 
