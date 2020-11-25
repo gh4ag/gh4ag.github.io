@@ -14310,14 +14310,14 @@ a.anchor-link {
 <p>The notion of "best overlap" refers to the minimisation of a distance between the curves. Definin the distance is thus the first step.</p>
 <p>In the following examples, we will take the distance between two curves as the quadratic difference.</p>
 <p>Provided that $y1$ and $y2$ have the same number of points $N$, we define the distance as follows:</p>
-$$d(y1, y2) = \sum_{i=0}^{N-1} \left[y_1(x_i) - y_2(x_i) \right]^2 $$<p>Now, we supposed that the the curves are considered at the same locations $x_i$, so we will just use the index $i$ to track the value of y in a array of length $N$:</p>
+$$d(y1, y2) = \sum_{i=0}^{N-1} \left[y_1(x_i) - y_2(x_i) \right]^2 $$<p>Now, we supposed that the the curves are considered at the same locations $x_i$, so we will just use the index $i$ to tag the values of y in a array of length $N$:</p>
 $$d(y1, y2) = \sum_{i=0}^{N-1} \left(y_{1,i} - y_{2,i} \right)^2 $$<p>Intuitively, finding the best overlap would just consist in making a curve "glide" horizontally while keeping the other fixed. Then, for each increment of translation, we would compute the distance and try to get the minimum among all the computed distances. This would give us the "best" overlap.</p>
 <p><img src="curve_swipe.png" alt="curve_swipe.png"></p>
 <blockquote><p>Here I would like to mention two things:</p>
 <ol>
 <li><p>We may be tempted to go for a convolution product because it seems to be exactly what we are trying to do. However, as I will show later it doesn't work.</p>
 </li>
-<li><p>The problem that will come quickly is how to compare the distance between two sets of curves, where both sets are of different length. We need to renormalize it, otherwise, a bad overlap between two short pieces may yield a better distance than a good yet non perfect overlap between two long pieces of curve.</p>
+<li><p>The problem that will come quickly is how to compare the distance between two sets of curves, where both sets are of different lengths (number of points). We need to renormalize it, otherwise, a bad overlap between two short pieces may yield a better distance than a good yet non perfect overlap between two long pieces of curve.</p>
 </li>
 </ol>
 <p>We will call $d_{m}$ the normalized distance and define it as follows:</p>
@@ -14328,7 +14328,7 @@ $$d_{m}(y1, y2) = \frac{d(y1,y2)}{N} = \frac{1}{N} \sum_{i=0}^{N-1} \left(y_{1,i
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Import">Import<a class="anchor-link" href="#Import">&#182;</a></h1>
+<h1 id="Imports">Imports<a class="anchor-link" href="#Imports">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
@@ -14349,7 +14349,7 @@ $$d_{m}(y1, y2) = \frac{d(y1,y2)}{N} = \frac{1}{N} \sum_{i=0}^{N-1} \left(y_{1,i
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Initial-Problem">Initial Problem<a class="anchor-link" href="#Initial-Problem">&#182;</a></h1><p>We want to retreive the horizontal shift between $y1$ and $y2$ to find the best overlap between the two curves.</p>
+<h1 id="Initial-Problem">Initial Problem<a class="anchor-link" href="#Initial-Problem">&#182;</a></h1><p>We want to retreive the horizontal shift between $y1$ and $y2$ in order to find the best overlap between the two curves.</p>
 <p>We will call this shift, the offset $o$.</p>
 
 </div>
@@ -14774,7 +14774,7 @@ n - argmin - 1 = 99
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Observation</strong>: we see that our algotithm seems to work well on functions that show some variation but fail on a flat line. To be honest, the flat line does't show any offset and the answer should have been 0. Here, it means that any position give the same distance. However, it seems that the first absolute minima alway provides the right answer. Strangeley, numpy.argmin is supposed to return the first argmin found.</p>
-<p><strong>Conclusion</strong>: the algorithm works and the special case of flat lines has to be trated seperately.</p>
+<p><strong>Conclusion</strong>: the algorithm works for pieces of the same lengths and the special case of flat lines has to be trated seperately.</p>
 <p>Now let's change the algorithm to improve this first work.</p>
 
 </div>
