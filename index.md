@@ -16,3 +16,7 @@ FreeFem++ is a finite-element (and finite volume) solver written in C++ with ada
 My contribution to this project consists in some short examples to show how to embed a user-defined C++ class into FreeFem++ using the right FreeFem++ functions and classes.<br><br>
 
 Link to the github project page: [freefem\_class\_examples](https://gh4ag.github.io/freefem_class_examples/)
+
+### OSX
+
+- [A guide to fix randow shutdown on OSX 11 Big Sur]({{ site.baseurl }}{% link assets/osx/Big_Sur_Shutdowns/big_sur_shutdowns.md %})
