@@ -1,6 +1,7 @@
 ---
 title: Repetitive Shutdowns under BigSur Mac OS 11
 layout: post
+date: 28/11/2020
 ---
 
 # Your macbook powers off randomly
