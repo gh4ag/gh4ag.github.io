@@ -19,4 +19,4 @@ Link to the github project page: [freefem\_class\_examples](https://gh4ag.github
 
 ### OSX
 
-- [A guide to fix randow shutdown on OSX 11 Big Sur]({{ site.baseurl }}{% link assets/osx/Big_Sur_Shutdowns/big_sur_shutdowns.md %})
+- [A guide to fix random shutdown on OSX 11 Big Sur]({{ site.baseurl }}{% link assets/osx/Big_Sur_Shutdowns/big_sur_shutdowns.md %})
