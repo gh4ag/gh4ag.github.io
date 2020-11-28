@@ -9,7 +9,7 @@ layout: home
 ### Python 
 - [Find best overlap between two curves]({{ site.baseurl }}{% link assets/python/curve_overlap/curve_overlap.html %}) <span style="opacity:0">HHHH</span> [[Download jupyter notebook]({{ site.baseurl }}{% link assets/python/curve_overlap/curve_overlap.ipynb %})]
 
-### [FreeFem++ class examples](https://gh4ag.github.io/freefem_class_examples/)
+### FreeFem++ [class examples](https://gh4ag.github.io/freefem_class_examples/)
 
 FreeFem++ is a finite-element (and finite volume) solver written in C++ with adaptive meshing. See the official [FreeFem++ page](http://www.freefem.org) for more information about the software.<br><br>
 

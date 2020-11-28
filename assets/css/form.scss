@@ -1,0 +1,182 @@
+---
+---
+/* #############################################################################
+form css
+############################################################################# */
+/* break points (according to bootstrap doc) */
+$sm-width: 576px;
+$md-width: 768px;
+$lg-width: 992px;
+$xl-width: 1200px;
+/* colors */
+$special_black: black;
+$special-white: white;
+$prussian-blue: rgba(9, 41, 70, 1);
+$lapis-lazuli: rgba(37, 95, 154, 1);
+$naples-yellow: rgba(254, 221, 100, 1);
+$rusty-red: rgba(222, 60, 75, 1);
+$french-raspberry: rgba(196, 40, 71, 1);
+/* Font size */
+$default-font-size: 2vw;
+$title-font-size: 7vw;
+$big-title-font-size: 10vw;
+$subtitle-font-size: 2.5vw;
+$big-subtitle-font-size: 3.57vw;
+$big-font-size: 4vw;
+$huge-font-size: 5.71vw;
+/* #############################################################################
+Registration form
+############################################################################# */
+.reg_form {
+  box-sizing: border-box;
+}
+
+.reg_form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap:20px;
+}
+
+form.reg_form {
+  padding: 10px 15px;
+  background: #fff;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+h1.reg_form {
+  margin: 0 0 30px 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+form.reg_form button{
+  background:#092b46;
+  color:#fff;
+  border:0;
+  text-transform: uppercase;
+}
+
+.reg_form button:hover,.reg_form button:focus{
+  background:#e5ca61;
+  color:#092a46;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+.reg_form label, .reg_form input{
+  display:inline-block;
+}
+.reg_form label{
+	font-weight: bold;
+}
+.reg_form input{
+	width: 100%;
+}
+.reg_form div{
+  margin:0;
+}
+
+.reg_form select{
+  background-color: #fff;
+}
+
+/*.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.wrapper label{
+	text-align: left;
+	width: 100%;
+}
+
+.wrapper div.d-flex{
+	margin-top:1em;
+	padding: 0;
+}
+
+.wrapper p{
+  text-align: left;
+}
+*/
+.form_item{
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	width: 50vw;
+}
+
+.form_instruction{
+  padding-bottom: 0;
+}
+
+.instruction{
+  padding: 0;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.phd_student_block{
+  display: none;
+}
+
+.postdoc_block{
+  display: none;
+}
+
+.professor_block{
+  display: none;
+}
+
+.inputWithMsg{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.inputWithMsg > * {
+	width: inherit;
+}
+
+input#emailConfirmation {
+	width: inherit;
+}
+
+.reg_form .full{
+  grid-column: 1 / 3;
+}
+
+.formWarning{
+	color: red;
+	font-style: italic;
+	display: none;
+}
+div.alert{
+	text-align: center;
+	padding: 10px;
+	background: #63003C;
+	color:#fff;
+	margin-bottom: 0;
+	display: none;
+}
+
+@media (max-width:$md-width){
+	.form_item{
+		width: 80vw;
+	}
+  .inputWithMsg{
+    flex-direction: column-reverse;
+  }
+}
