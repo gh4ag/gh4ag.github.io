@@ -6,8 +6,12 @@ layout: home
 ## Projects
 
 
-### Python 
+### Math
 - [Find best overlap between two curves]({{ site.baseurl }}{% link assets/python/curve_overlap/curve_overlap.html %}) <span style="opacity:0">HHHH</span> [[Download jupyter notebook]({{ site.baseurl }}{% link assets/python/curve_overlap/curve_overlap.ipynb %})]
+
+### Physics
+
+- [Freefall Simulator](https://nbviewer.jupyter.org/github/gh4ag/freefall/blob/main/freefall_simulator.ipynb) <span style="opacity:0">HHHH</span> [[Download jupyter notebook](https://github.com/gh4ag/freefall/blob/main/freefall_simulator.ipynb)]
 
 ### FreeFem++ [class examples](https://gh4ag.github.io/freefem_class_examples/)
 
