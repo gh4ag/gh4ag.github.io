@@ -11,7 +11,8 @@ layout: home
 
 ### Physics
 
-- [Freefall Simulator](https://nbviewer.jupyter.org/github/gh4ag/freefall/blob/main/freefall_simulator.ipynb) <span style="opacity:0">HHHH</span> [[Download jupyter notebook](https://github.com/gh4ag/freefall/blob/main/freefall_simulator.ipynb)]
+- [Skydiving Simulator]({{ site.baseurl }}{% link assets/skydiving_simulator/skydiving_simulator.html %}) <span style="opacity:0">HHHH</span> 
+- [The Physics of Skydiving](https://nbviewer.jupyter.org/urls/gh4ag.github.io/assets/python/freefall.ipynb) <span style="opacity:0">HHHH</span> [[Download jupyter notebook]({{ site.baseurl }}{% link assets/python/freefall.ipynb %})]
 
 ### FreeFem++ [class examples](https://gh4ag.github.io/freefem_class_examples/)
 
